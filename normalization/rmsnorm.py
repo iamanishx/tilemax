@@ -1,3 +1,11 @@
+"""
+Mathematical Formula:
+    y_i = (x_i / RMS(x)) * gamma_i
+
+Where:
+    RMS(x) = sqrt( (1 / N) * sum(x_j^2) + eps )
+    N is the number of elements in the row (column dimension COLS).
+"""
 import cuda.tile as ct
 import cupy as cp
 import numpy as np
